@@ -9,7 +9,7 @@ import { JwtCustomStrategy } from './jwt.custom.strategy'
 
 @Module({
   imports: [TypeOrmModule.forFeature([UserEntity]),
-  JwtModule.register({secret : 'warriors',
+  JwtModule.register({secret : '123456',
   signOptions:{
     algorithm : 'HS512',
     expiresIn : '1d'

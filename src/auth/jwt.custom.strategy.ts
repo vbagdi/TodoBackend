@@ -10,7 +10,7 @@ export class JwtCustomStrategy extends PassportStrategy(Strategy){
 	constructor(@InjectRepository(UserEntity) private repo:Repository<UserEntity>){
 		super({
 			jwtFromRequest : ExtractJwt.fromAuthHeaderAsBearerToken(),
-			secretOrKey : 'warriors'
+			secretOrKey : '123456'
 		});
 	}
 	async validate(payload : {username:string}){
